@@ -6,7 +6,7 @@ const router = useRouter();
 
 onMounted(() => {
   if (window.eventCenterForAppNameVite2) {
-    let data = window.eventCenterForAppNameVite2.getData('app-child-vue3');
+    let data = window.eventCenterForAppNameVite2.getData('app-child2-vue3');
     router.replace({ path: data.path });
   }
 });
@@ -16,6 +16,4 @@ onMounted(() => {
   <router-view />
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
