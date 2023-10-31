@@ -20,12 +20,21 @@ const menuList: { text: string; path: string }[] = [
     path: '/about',
   },
   {
-    text: 'vue3子系统-路由one',
+    text: 'vue3--1号-子系统-路由one',
     path: '/vue3MicroApp/one',
   },
   {
-    text: 'vue3子系统-路由two',
+    text: 'vue3--1号-子系统-路由two',
     path: '/vue3MicroApp/two',
+  },
+
+  {
+    text: 'vue3--2号-子系统-路由one',
+    path: '/vue3MicroApp2/one',
+  },
+  {
+    text: 'vue3--2号-子系统-路由two',
+    path: '/vue3MicroApp2/two',
   },
 ];
 const routerPush = ({ path }: { text: string; path: string }) => {

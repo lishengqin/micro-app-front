@@ -9,14 +9,8 @@ function handleMicroData() {
   if (window.eventCenterForAppNameVite) {
     // 监听基座下发的数据变化
     window.eventCenterForAppNameVite.addDataListener((data: Record<string, unknown>) => {
-      console.log("子系统接受消息", data)
       router.replace({ path: data.path })
     })
-
-    // // 向基座发送数据
-    // setTimeout(() => {
-    //   window.eventCenterForAppNameVite.dispatch({ myname: 'child-vite' })
-    // }, 3000)
   }
 }
 handleMicroData()

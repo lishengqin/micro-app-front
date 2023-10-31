@@ -26,6 +26,14 @@ const routes = [
         component: () =>
           import(/* webpackChunkName: "vue3MicroApp" */ '../views/vue3MicroApp/index.vue'),
       },
+
+      // 微应用
+      {
+        path: '/vue3MicroApp2/:page*',
+        name: 'vue3MicroApp2',
+        component: () =>
+          import(/* webpackChunkName: "vue3MicroApp2" */ '../views/vue3MicroApp2/index.vue'),
+      },
     ],
   },
 ];

@@ -5,8 +5,8 @@ const route = useRoute();
 const router = useRouter();
 
 onMounted(() => {
-  if (window.eventCenterForAppNameVite) {
-    let data = window.eventCenterForAppNameVite.getData('app-child2-vue3');
+  if (window.eventCenterForAppNameVite2) {
+    let data = window.eventCenterForAppNameVite2.getData('app-child-vue3');
     router.replace({ path: data.path });
   }
 });

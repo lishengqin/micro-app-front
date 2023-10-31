@@ -7,14 +7,10 @@ export default defineConfig({
   resolve: {
     alias: [{ find: /^~?@\//, replacement: path.join(process.cwd(), 'src/') }],
   },
+  base: "/child2-vue3/",
   server: {
     host: true,
-    port: 1111,
-    proxy: {
-      "^/child-vue3": {
-        target: 'http://localhost:2222/',
-        changeOrigin: true,
-      }
-    }
+    port: 3333,
+
   }
 })
